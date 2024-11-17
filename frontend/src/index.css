@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+   
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+span{
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Custom styling for the cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+  }
+  .card-title{
+    position: relative;
+    bottom: 4rem; 
+    left: 1rem;   
+    font-weight: 700;    /* Bold */
+    
+  }
+  .card-title :hover {
+    color: #fbbf24; 
+    transition: color 300ms ease;  
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  /* Ensure responsive behavior */
+  @media (max-width: 1024px) {
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+  

@@ -39,7 +39,7 @@ const Register = () => {
     formData.append('photo', photo)
 
     try {
-      const { data } = await axios.post('http://localhost:4001/api/users/register',
+      const { data } = await axios.post('https://blog-app-s1n1.onrender.com/api/users/register',
         formData, {
         withCredentials: true,
         headers: {

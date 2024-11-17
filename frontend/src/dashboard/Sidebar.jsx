@@ -25,7 +25,7 @@ const Sidebar = ({ setComponent }) => {
   const logoutHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.get("http://localhost:4001/api/users/logout", {
+      const { data } = await axios.get("https://blog-app-s1n1.onrender.com/api/users/logout", {
         withCredentials: true,
       })
       console.log(data)

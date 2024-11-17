@@ -8,7 +8,6 @@ import Login from '../src/pages/Login'
 import Creator from '../src/pages/Creator'
 import Register from '../src/pages/Register'
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../src/components/Footer'
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from './context/AuthProvider'

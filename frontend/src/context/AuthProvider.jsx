@@ -23,7 +23,7 @@ const AuthProvider = ({ children }) => {
         console.log(token);
         if (token) {
           const { data } = await axios.get(
-            "http://localhost:4001/api/users/my-profile",
+            "https://blog-app-s1n1.onrender.com/api/users/my-profile",
             {
               withCredentials: true,
               headers: {
@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
     };
     const fetchBlogs = async () => {
       try {
-        const { data } = await axios.get("http://localhost:4001/api/blogs/all-blogs",
+        const { data } = await axios.get("https://blog-app-s1n1.onrender.com/api/blogs/all-blogs",
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },

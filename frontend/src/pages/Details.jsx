@@ -11,7 +11,7 @@ const Details = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:4001/api/blogs/single-blogs/${id}`,
+                const { data } = await axios.get(`https://blog-app-s1n1.onrender.com/api/blogs/single-blogs/${id}`,
                     {
                         withCredentials: true,
                         headers: {

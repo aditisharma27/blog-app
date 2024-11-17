@@ -29,7 +29,7 @@ function UpdateBlog() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:4001/api/blogs/single-blogs/${id}`,
+        const { data } = await axios.get(`https://blog-app-s1n1.onrender.com/api/blogs/single-blogs/${id}`,
           {
             withCredentials: true,
             headers: {
@@ -60,7 +60,7 @@ function UpdateBlog() {
     formData.append('BlogImage', BlogImage)
 
     try {
-      const { data } = await axios.put(`http://localhost:4001/api/blogs/update/${id}`,
+      const { data } = await axios.put(`https://blog-app-s1n1.onrender.com/api/blogs/update/${id}`,
         formData, {
         withCredentials: true,
         headers: {

@@ -6,7 +6,7 @@ const createTokenAndSaveCookies = async(userId, res)=>{
         expiresIn:"7d"
     })
     res.cookie("jwt", token,{
-        httpOnly:false,    //xss
+        httpOnly: true,    //xss
         secure: true,
         sameSite: "none"   //csrf
     }) 

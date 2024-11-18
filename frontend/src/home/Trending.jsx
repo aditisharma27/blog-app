@@ -32,11 +32,11 @@ const Trending = () => {
   };
 
   return (
-    <div className="container mx-auto mt-5 ">
+    <div className="container gap-4 mx-auto mt-5 ">
       <h1 className="text-2xl font-semibold mb-4">TRENDING</h1>
 
       {/* Carousel component */}
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000}>
+      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={4000}>
         {blogs.map((blog) => (
           <div key={blog._id}
                className="card bg-white shadow-lg rounded-lg overflow-hidden ">
